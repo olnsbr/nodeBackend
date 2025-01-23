@@ -5,10 +5,11 @@ const cors = require('cors');
 
 const app = express();
 
-mongo.connect('mongodb+srv://user:fulano@cluster0-pffwf.mongodb.net/test?retryWrites=true&w=majority',
-{   useUnifiedTopology: true ,
-    useNewUrlParser: true 
-}
+mongo.connect('mongodb+srv://user:username@path.to.the.db.mongodb.net/test?retryWrites=true&w=majority',
+    {
+        useUnifiedTopology: true,
+        useNewUrlParser: true
+    }
 );
 
 app.use(cors());
